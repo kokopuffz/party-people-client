@@ -176,6 +176,7 @@ export default function CreateEvent() {
                 onChange={(e) =>
                   setEventForm({ ...eventForm, zipcode: e.target.value })
                 }
+                required 
               />
             </Form.Group>
           </Row>
@@ -192,6 +193,7 @@ export default function CreateEvent() {
               onChange={(e) =>
                 setEventForm({ ...eventForm, description: e.target.value })
               }
+              required
             />
           </FloatingLabel>
 
@@ -205,6 +207,7 @@ export default function CreateEvent() {
               onChange={(e) =>
                 setEventForm({ ...eventForm, date: e.target.value })
               }
+              required
             />
           </Form.Group>
 
@@ -218,6 +221,7 @@ export default function CreateEvent() {
               onChange={(e) =>
                 setEventForm({ ...eventForm, time: e.target.value })
               }
+              required
             />
           </Form.Group>
         </Row>
